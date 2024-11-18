@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Robert Jackson's website showcasing timetable, about, gallery, and contact information">
+    <title>Robert Jackson</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .timetable, .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .timetable table, .gallery img {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .timetable th, .timetable td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .gallery img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Robert Jackson</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#timetable">Timetable</a>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Robert Jackson's Website</h2>
+        <p>Explore the sections below to learn more about Robert Jackson's schedule, background, gallery, and how to get in touch.</p>
+    </section>
+
+    <!-- Timetable Section -->
+    <section id="timetable">
+        <h2>Timetable</h2>
+        <div class="timetable">
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>9:00 AM - 11:00 AM</td>
+                    <td>Brain Storming Sessions</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>11:00 AM - 1:00 PM</td>
+                    <td>Client and Shareholders connection</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>2:00 PM - 4:00 PM</td>
+                    <td>Building Projects</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>9:00 AM - 3:00 PM</td>
+                    <td>Project testing</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>1:00 PM - 5:00 PM</td>
+                    <td>Machine Learning</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Robert Jackson is an expertise in the computer world. with a wide knowledge about AI and machine learning, we are toping the world with the best technologies in Uganda and the whole world.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://img.freepik.com/free-photo/futuristic-portrait-young-girl-with-high-tech_23-2151133520.jpg?t=st=1731945777~exp=1731949377~hmac=62fd3ef0e6e096b3b468e4318eb4c6c1338f058389d2c478d413df683bbffd04&w=740" alt="Image 1">
+            <img src="https://img.freepik.com/free-photo/international-day-education-futuristic-style_23-2150998678.jpg?t=st=1731945885~exp=1731949485~hmac=145eb5885fa7e0f8280850b240ce07a908f4f4120acdef112c19e9087e0bedeb&w=360" alt="Image 2">
+            <img src="https://img.freepik.com/free-photo/robot-performing-human-job_23-2150911983.jpg?t=st=1731945934~exp=1731949534~hmac=fb29d79a062bdb268f4a9f9e02bc6b91f295eec18e472bde8314aaacd9c7a136&w=740" alt="Image 3">
+            <img src="https://img.freepik.com/premium-photo/person-using-ai-tool-job_23-2150711496.jpg?ga=GA1.1.307388971.1731786586&semt=ais_hybrid" alt="Image 4">
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>BAIT/23D/SS/F0209</p>
+    </footer>
+
+</body>
+</html>
